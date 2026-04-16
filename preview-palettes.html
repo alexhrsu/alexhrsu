@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Guarantee — Color Scheme Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+    background: #F2F2F2;
+    padding: 32px;
+  }
+  h1 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 28px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
+    background: white;
+  }
+  .card-hero {
+    padding: 20px 18px 18px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 4px;
+  }
+  .card-hero .label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.65;
+  }
+  .card-hero .brand {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+  .card-hero .tagline {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-top: 2px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .card-body {
+    padding: 14px 18px 18px;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card-body p {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .cta-btn {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    background: var(--accent);
+    color: var(--btn-text, white);
+    width: fit-content;
+  }
+  .swatches {
+    display: flex;
+    gap: 5px;
+    padding: 12px 18px;
+    background: var(--bg);
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+  .swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  .card-num {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #bbb;
+    padding: 10px 18px 0;
+    background: var(--bg);
+  }
+</style>
+</head>
+<body>
+
+<h1>Agent Guarantee — Color Palette Explorations (16 options)</h1>
+
+<div class="grid">
+
+  <!-- 01: Royal Navy + Cloud White -->
+  <div class="card">
+    <div class="card-hero" style="background:#1B2A6B; color:white;">
+      <span class="label">Option 01</span>
+      <span class="brand">Covert</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F8FAFF; --text-muted:#4A5568; --accent:#1B2A6B;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F8FAFF;">
+      <div class="swatch" style="background:#1B2A6B;"></div>
+      <div class="swatch" style="background:#2A3F9F;"></div>
+      <div class="swatch" style="background:#F8FAFF;"></div>
+      <div class="swatch" style="background:#4A5568;"></div>
+    </div>
+  </div>
+
+  <!-- 02: Warm Cream + Deep Slate -->
+  <div class="card">
+    <div class="card-hero" style="background:#2D3748; color:white;">
+      <span class="label">Option 02</span>
+      <span class="brand">Mantle</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FAF8F5; --text-muted:#4A5568; --accent:#2D3748;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FAF8F5;">
+      <div class="swatch" style="background:#2D3748;"></div>
+      <div class="swatch" style="background:#4A5568;"></div>
+      <div class="swatch" style="background:#FAF8F5;"></div>
+      <div class="swatch" style="background:#E2D9C9;"></div>
+    </div>
+  </div>
+
+  <!-- 03: Pearl + Cobalt Blue -->
+  <div class="card">
+    <div class="card-hero" style="background:#2563EB; color:white;">
+      <span class="label">Option 03</span>
+      <span class="brand">Clad</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F9F9FF; --text-muted:#374151; --accent:#2563EB;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F9F9FF;">
+      <div class="swatch" style="background:#2563EB;"></div>
+      <div class="swatch" style="background:#1D4ED8;"></div>
+      <div class="swatch" style="background:#F9F9FF;"></div>
+      <div class="swatch" style="background:#DBEAFE;"></div>
+    </div>
+  </div>
+
+  <!-- 04: Ivory + Forest Green -->
+  <div class="card">
+    <div class="card-hero" style="background:#166534; color:white;">
+      <span class="label">Option 04</span>
+      <span class="brand">Surety</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FFFDF7; --text-muted:#374151; --accent:#166534;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FFFDF7;">
+      <div class="swatch" style="background:#166534;"></div>
+      <div class="swatch" style="background:#15803D;"></div>
+      <div class="swatch" style="background:#FFFDF7;"></div>
+      <div class="swatch" style="background:#DCFCE7;"></div>
+    </div>
+  </div>
+
+  <!-- 05: Soft White + Indigo -->
+  <div class="card">
+    <div class="card-hero" style="background:#4338CA; color:white;">
+      <span class="label">Option 05</span>
+      <span class="brand">Certus</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F8F8FF; --text-muted:#374151; --accent:#4338CA;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F8F8FF;">
+      <div class="swatch" style="background:#4338CA;"></div>
+      <div class="swatch" style="background:#6366F1;"></div>
+      <div class="swatch" style="background:#F8F8FF;"></div>
+      <div class="swatch" style="background:#E0E7FF;"></div>
+    </div>
+  </div>
+
+  <!-- 06: Sky Mist + Deep Teal -->
+  <div class="card">
+    <div class="card-hero" style="background:#0F766E; color:white;">
+      <span class="label">Option 06</span>
+      <span class="brand">Clair</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F0F9FF; --text-muted:#1E3A3A; --accent:#0F766E;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F0F9FF;">
+      <div class="swatch" style="background:#0F766E;"></div>
+      <div class="swatch" style="background:#0D9488;"></div>
+      <div class="swatch" style="background:#F0F9FF;"></div>
+      <div class="swatch" style="background:#CCFBF1;"></div>
+    </div>
+  </div>
+
+  <!-- 07: Lavender + Deep Violet -->
+  <div class="card">
+    <div class="card-hero" style="background:#5B21B6; color:white;">
+      <span class="label">Option 07</span>
+      <span class="brand">Covert</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F5F3FF; --text-muted:#3B1F6A; --accent:#5B21B6;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F5F3FF;">
+      <div class="swatch" style="background:#5B21B6;"></div>
+      <div class="swatch" style="background:#7C3AED;"></div>
+      <div class="swatch" style="background:#F5F3FF;"></div>
+      <div class="swatch" style="background:#EDE9FE;"></div>
+    </div>
+  </div>
+
+  <!-- 08: Champagne + Near-Black -->
+  <div class="card">
+    <div class="card-hero" style="background:#1C1917; color:white;">
+      <span class="label">Option 08</span>
+      <span class="brand">Harbr</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FFFBEB; --text-muted:#44403C; --accent:#1C1917;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FFFBEB;">
+      <div class="swatch" style="background:#1C1917;"></div>
+      <div class="swatch" style="background:#44403C;"></div>
+      <div class="swatch" style="background:#FFFBEB;"></div>
+      <div class="swatch" style="background:#D4A94A;"></div>
+    </div>
+  </div>
+
+  <!-- 09: White + Sky Blue gradient hero -->
+  <div class="card">
+    <div class="card-hero" style="background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%); color:white;">
+      <span class="label">Option 09</span>
+      <span class="brand">Clad</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FFFFFF; --text-muted:#374151; --accent:#0EA5E9;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FFFFFF;">
+      <div class="swatch" style="background:#0EA5E9;"></div>
+      <div class="swatch" style="background:#2563EB;"></div>
+      <div class="swatch" style="background:#FFFFFF;"></div>
+      <div class="swatch" style="background:#E0F2FE;"></div>
+    </div>
+  </div>
+
+  <!-- 10: Sage + Dark Green -->
+  <div class="card">
+    <div class="card-hero" style="background:#14532D; color:white;">
+      <span class="label">Option 10</span>
+      <span class="brand">Mantle</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F1F5F1; --text-muted:#1A3020; --accent:#14532D;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F1F5F1;">
+      <div class="swatch" style="background:#14532D;"></div>
+      <div class="swatch" style="background:#15803D;"></div>
+      <div class="swatch" style="background:#F1F5F1;"></div>
+      <div class="swatch" style="background:#BBF7D0;"></div>
+    </div>
+  </div>
+
+  <!-- 11: Silver Mist + Prussian Blue -->
+  <div class="card">
+    <div class="card-hero" style="background:#1E3A5F; color:white;">
+      <span class="label">Option 11</span>
+      <span class="brand">Surety</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F4F6F8; --text-muted:#2D3F55; --accent:#1E3A5F;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F4F6F8;">
+      <div class="swatch" style="background:#1E3A5F;"></div>
+      <div class="swatch" style="background:#2563A0;"></div>
+      <div class="swatch" style="background:#F4F6F8;"></div>
+      <div class="swatch" style="background:#C8D9F0;"></div>
+    </div>
+  </div>
+
+  <!-- 12: Warm White + Terracotta -->
+  <div class="card">
+    <div class="card-hero" style="background:#C2410C; color:white;">
+      <span class="label">Option 12</span>
+      <span class="brand">Certus</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FFF8F5; --text-muted:#431407; --accent:#C2410C;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FFF8F5;">
+      <div class="swatch" style="background:#C2410C;"></div>
+      <div class="swatch" style="background:#EA580C;"></div>
+      <div class="swatch" style="background:#FFF8F5;"></div>
+      <div class="swatch" style="background:#FFEDD5;"></div>
+    </div>
+  </div>
+
+  <!-- 13: Linen + Dark Rose Gold -->
+  <div class="card">
+    <div class="card-hero" style="background: linear-gradient(135deg, #9D174D 0%, #C2185B 100%); color:white;">
+      <span class="label">Option 13</span>
+      <span class="brand">Clair</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FFF5F8; --text-muted:#4A0020; --accent:#9D174D;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FFF5F8;">
+      <div class="swatch" style="background:#9D174D;"></div>
+      <div class="swatch" style="background:#C2185B;"></div>
+      <div class="swatch" style="background:#FFF5F8;"></div>
+      <div class="swatch" style="background:#FCE7F3;"></div>
+    </div>
+  </div>
+
+  <!-- 14: White + Navy + Gold accent -->
+  <div class="card">
+    <div class="card-hero" style="background:#172554; color:white;">
+      <span class="label">Option 14</span>
+      <span class="brand">Harbr</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FFFFFF; --text-muted:#374151; --accent:#D4A017;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn" style="background:#D4A017; color:#172554;">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FFFFFF;">
+      <div class="swatch" style="background:#172554;"></div>
+      <div class="swatch" style="background:#D4A017;"></div>
+      <div class="swatch" style="background:#FFFFFF;"></div>
+      <div class="swatch" style="background:#FEF9C3;"></div>
+    </div>
+  </div>
+
+  <!-- 15: Mint + Deep Navy gradient -->
+  <div class="card">
+    <div class="card-hero" style="background: linear-gradient(135deg, #064E3B 0%, #065F46 100%); color:white;">
+      <span class="label">Option 15</span>
+      <span class="brand">Covert</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#F0FFF8; --text-muted:#064E3B; --accent:#065F46;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#F0FFF8;">
+      <div class="swatch" style="background:#064E3B;"></div>
+      <div class="swatch" style="background:#10B981;"></div>
+      <div class="swatch" style="background:#F0FFF8;"></div>
+      <div class="swatch" style="background:#A7F3D0;"></div>
+    </div>
+  </div>
+
+  <!-- 16: True White + Slate Blue (clean SaaS) -->
+  <div class="card">
+    <div class="card-hero" style="background: linear-gradient(135deg, #334155 0%, #1E293B 100%); color:white;">
+      <span class="label">Option 16</span>
+      <span class="brand">Mantle</span>
+      <span class="tagline">Guarantees for AI agents</span>
+    </div>
+    <div class="card-body" style="--bg:#FFFFFF; --text-muted:#475569; --accent:#334155;">
+      <p>Zero fees for the first year. Founder pass available now.</p>
+      <span class="cta-btn">Get Founder Pass →</span>
+    </div>
+    <div class="swatches" style="background:#FFFFFF;">
+      <div class="swatch" style="background:#334155;"></div>
+      <div class="swatch" style="background:#64748B;"></div>
+      <div class="swatch" style="background:#FFFFFF;"></div>
+      <div class="swatch" style="background:#F1F5F9;"></div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top:40px; padding:24px; background:white; border-radius:14px; max-width:520px;">
+  <p style="font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#888; margin-bottom:16px;">Name Shortlist</p>
+  <div style="display:flex; flex-direction:column; gap:10px;">
+    <div style="display:flex; gap:12px; align-items:baseline;">
+      <span style="font-size:16px; font-weight:700; color:#1B2A6B; min-width:80px;">Covert</span>
+      <span style="font-size:11px; color:#666;">cover + covert ops — agent vibes built in</span>
+    </div>
+    <div style="display:flex; gap:12px; align-items:baseline;">
+      <span style="font-size:16px; font-weight:700; color:#166534; min-width:80px;">Mantle</span>
+      <span style="font-size:11px; color:#666;">"taking up the mantle" — protection layer</span>
+    </div>
+    <div style="display:flex; gap:12px; align-items:baseline;">
+      <span style="font-size:16px; font-weight:700; color:#2563EB; min-width:80px;">Clad</span>
+      <span style="font-size:11px; color:#666;">ironclad — armored, covered, secure</span>
+    </div>
+    <div style="display:flex; gap:12px; align-items:baseline;">
+      <span style="font-size:16px; font-weight:700; color:#0F766E; min-width:80px;">Clair</span>
+      <span style="font-size:11px; color:#666;">clear coverage — echoes Klaimee's vibe</span>
+    </div>
+    <div style="display:flex; gap:12px; align-items:baseline;">
+      <span style="font-size:16px; font-weight:700; color:#1E3A5F; min-width:80px;">Surety</span>
+      <span style="font-size:11px; color:#666;">real insurance term — surety bond, guarantees</span>
+    </div>
+    <div style="display:flex; gap:12px; align-items:baseline;">
+      <span style="font-size:16px; font-weight:700; color:#172554; min-width:80px;">Harbr</span>
+      <span style="font-size:11px; color:#666;">safe harbor — protection, shelter, refuge</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
